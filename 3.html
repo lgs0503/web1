@@ -1,19 +1,61 @@
 <!doctype html>
 <html>
-<head>
-  <title>WEB- JAVASCRPIT </title>
-  <meta charset="utf-8">
-</head>
-<body>
-  <h1><a href ="index.html">WEB<a></h1>
-<ol>
-  <li><a href ="1.html">HTML<a><br></li>
-  <li><a href ="2.html">CSS<a><br></li>
-  <li><a href ="3.html">JAVASCRPIT<a><br></li>
-</ol>
-<h2>JAVASCRPIT</h2>
-  <a href="http:///naver.com" target = "_blank" title="네이버">네이버</a>
-<p>자바 스크립트란 ~~~~~</p>
-<img src="coding.jpg" width ="100%">
+  <head>
+    <title>WEB-JAVASCRPIT</title>
+    <meta charset="utf-8">
+    <!-- CSS Style Code -->
+    <style>
+      body{
+        margin:0;
+      }
+      a {
+        color:black;
+        text-decoration:none; <!-- 텍스트 장식이 없다 데코레이션 -->
+      }
+      <!-태그 < 클래스 <ID 선택자 순 -->
+      #active{
+        color:red;
+        font-size:20px;
+      }
+      .saw{
+        color:gray;
+      }
+      h1{
+        font-size:45px;
+        text-align: center;
+        border-bottom:1px solid gray;
+        margin:0;
+        padding:20px;
+      }
+      ol{
+        border-right:1px solid gray;
+        width:80px;
+        margin:0;
+        padding:30px;
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 160px 1fr;
+      }
+      #grid-text, p{
+        padding:20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><a href ="index.html">WEB</a></h1>
+    <div id ="grid">
+      <ol>
+        <li><a href ="1.html" class="saw">HTML</a><br></li>
+        <li><a href ="2.html" class="saw" id="active">CSS</a><br></li>
+        <li><a href ="3.html">JAVASCRPIT</a><br></li>
+      </ol>
+        <div id ="grid-text">
+          <h2 style = "color:red">JAVA SCRIPT</h2>
+          <p>JAVA SCRIPT 란 자바코드를 Function 역활을 할수 있게 기능을 부여한 코드이다. <br><br>
+              <img src="coding.jpg" width ="80%"><br><br><strong>코딩<u>이미지</u></strong>
+          </p>
+        </div>
+    </div>
 </body>
-</html>
+</hmtml>
